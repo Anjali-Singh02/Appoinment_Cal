@@ -1,0 +1,239 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.body {
+	background-color: #eef0f2;
+}
+
+.nav-bar {
+	display: flex;
+	background: #fff;
+	height: 60px;
+}
+
+.logo {
+	/* width: 120px; */
+	padding: 15px 30px;
+	margin: 0;
+	height: 60px;
+}
+.profile-img {
+	border-radius: 10px;
+	margin: auto 20px auto 30px;
+}
+.button-container {
+	padding: 10px;
+}
+.button-container button {
+	margin-right: 20px;
+	width: 160px;
+	padding: 5px;
+	border: none;
+	background: #fff;
+	color: #2196f3;
+	font-weight: bold;
+	border-radius: 20px;
+	box-shadow: 0 5px 11px 0px rgba(0, 0, 0, 0.2);
+}
+
+.setting-icon {
+	width: 25px;
+	height: 25px;
+	color: gray;
+	margin: auto 30px;
+}
+.sub-header-container {
+	display: flex;
+	align-items: center;
+	padding: 10px 30px;
+}
+.sub-header-container h5 {
+	color: #495057;
+}
+.content-container {
+	display: flex;
+	width: 90%;
+	margin: 40px auto;
+	justify-content: space-between;
+}
+/* Calendar section */
+.calendar-section {
+	border-radius: 10px;
+	max-width: 450px;
+	text-align: center;
+	width: 100%;
+
+	height: 300px;
+	background: #fff;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.month {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 3rem;
+	text-align: center;
+	font-size: 5px;
+	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.month h1 {
+	font-size: 1.7rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.month p {
+	margin-top: 10px;
+	font-size: 1.5rem;
+}
+
+.weekdays {
+	width: 100%;
+	height: 5rem;
+	padding: 0 0.4rem;
+	display: flex;
+	align-items: center;
+	color: #605e5e;
+}
+
+.weekdays div {
+	font-size: 1.1rem;
+	font-weight: 400;
+	letter-spacing: 0.1rem;
+	width: calc(40.2rem / 7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.2rem;
+	color: #8f969e;
+	background: #ffffff;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.days div {
+	font-size: 1.4rem;
+	margin: 0.3rem;
+	width: calc(20.2rem / 7);
+	height: 3rem;
+	margin-left: 10px;
+	display: flex;
+	background: #ffffff;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+	transition: background-color 0.2s;
+	border-radius: 30px;
+}
+
+.days div:hover:not(.today) {
+	background-color: #0e9b18;
+	/* border: 2px solid #777; */
+	border-radius: 30px;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+.prev-date,
+.next-date {
+	opacity: 0.5;
+}
+
+.today {
+	background-color: #167e56;
+}
+
+.schedule-section {
+	border-radius: 10px;
+	background: #fff;
+	width: 100%;
+	margin: 0 30px 5px;
+}
+
+.schedule-section .add-slots-container {
+	margin: 20px;
+}
+.add-slots-container button {
+	border: none;
+	background: #fff;
+	color: #2196f3;
+	font-weight: 700;
+	font-size: large;
+}
+.add-slots-container p {
+	padding-left: 35px;
+	line-height: 0.2;
+}
+.schedule-slots-container {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+.schedule-slots-container button {
+	padding: 10px 10px;
+	border-radius: 10px;
+	color: #8f969e;
+	background: #ffffff;
+	margin: 15px 20px auto auto;
+	font-size: 20px;
+	text-transform: uppercase;
+	border: none;
+	box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+.schedule-slots-container button:hover {
+	border: none;
+	color: #ffffff;
+	background: #2667ff;
+	box-shadow: 2px 5px 4px 2px rgba(32, 83, 210, 0.2);
+}
+.fa-circle {
+	margin-right: 10px;
+}
+.fa-circle:hover {
+	color: #ffffff;
+}
+.fa-clock {
+	background: #e8f1f9;
+	color: #2196f3;
+	padding: 5px;
+	border-radius: 10px;
+	/* box-shadow: 5px 10px 5px blue; */
+}
+.schedule-section hr {
+	width: 750px;
+}
+
+/* @media Query */
+@media (max-width: 600px) {
+	.right-section {
+		visibility: hidden;
+	}
+	.content-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.schedule-section {
+		margin: auto;
+		margin-top: 275px;
+	}
+}
